@@ -1,0 +1,220 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:40px;
+}
+
+/* logo */
+.logo1{
+    height:80px;
+    width:95px;
+    top:5px;
+}
+/* navigation bar */
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.5;
+    /* top:0px; */
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    /* top:0px; */
+    
+}
+.navigation{
+    display:flex;
+    list-style-type: none;
+    margin-left:0px;
+    font-size:1.3rem;
+    
+}
+
+.item{
+    margin:10px;
+}
+#logo{
+    margin:20px 33px;
+}
+
+#logo img{
+    margin:10px 13pxpx;
+}
+
+#navbar ul li a{
+    display:block;
+    padding:3px 22px;
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto Slab', serif;
+}
+#navbar ul li a:hover{
+    color:black;
+    border-radius:20px;
+    background-color: white;
+}
+/* home section */
+#home::before{
+    content:"";
+    background:url('./foodbg.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+    top:0px;
+    /* bottom:0px; */
+
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:450px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#home h1{
+    color:white;
+    text-align:center;
+    
+}
+
+#home p{
+    color:white;
+    text-align:center;
+    font-size:1.2rem;
+    font-family: 'Hind', sans-serif;
+}
+/* utility class */
+/* service container */
+#services{
+    margin:20px;
+    display:flex;
+}
+#services .box{
+    border:2px solid green;
+    padding:23px;
+    margin:10px;
+    border-radius: 23px;
+    background-color:rgb(234, 248, 241);
+
+}
+#services .box img{
+    height:156px;
+    margin:auto ;
+    display:block;
+    
+}
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+    text-align: center;
+}
+.h-primary-center{
+    font-size:3.8rem;
+    padding:12px;
+    text-align: center;
+
+   
+}
+.services-container h1{
+    text-align: center;
+    font-size:3.8rem;
+}
+
+.h-secondary{
+    font-size:1.8rem;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding:12px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: burlywood;
+    border-radius:10px;
+    color:white;
+    margin:17px;
+    font-size:1.1rem;
+    cursor:pointer;
+}
+/* clients section */
+#clients{
+    display:flex;
+    margin:40px;
+    align-items: center;
+    justify-content: center;
+}
+.client-item img{
+    height:150px;
+    width:200px;
+}
+.clients-section::before{
+    content:"";
+    position:absolute;
+    background: url("./logobg.jpg");
+    height:50%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+
+}
+/* contact section */
+.contact{
+    position:relative;
+}
+.contact::before{
+    content: "";
+    /* margin-top:10px; */
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:url('./contactbg.jpg') no-repeat center center/cover;
+    z-index:-1;
+    opacity:0.4;
+}
+.form-group{
+    margin:8px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#contact-box{
+    padding:1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input , 
+#contact-box textarea{
+    padding:0.5rem;
+    width:100%;
+    /* border:4px; */
+    font-size:0.9rem;
+
+}
+/* footer section */
+.center{
+    text-align: center;
+    background-color: lightgray;
+}
